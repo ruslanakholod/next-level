@@ -1,0 +1,91 @@
+@font-face {
+  font-family: FiraSans;
+  font-weight: 700;
+  src: url("../fonts/FiraSans/FiraSans-Bold.ttf");
+}
+@font-face {
+  font-family: FiraSans;
+  font-weight: 600;
+  src: url("../fonts/FiraSans/FiraSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: FiraSans;
+  font-weight: 500;
+  src: url("../fonts/FiraSans/FiraSans-Medium.ttf");
+}
+@font-face {
+  font-family: FiraSans;
+  font-weight: normal;
+  src: url("../fonts/FiraSans/FiraSans-Regular.ttf");
+}
+@font-face {
+  font-family: FiraSans;
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/FiraSans/FiraSans-Italic.ttf");
+}
+@font-face {
+  font-family: MuseoCyrl;
+  font-weight: 700;
+  src: url("../fonts/MuseoCyrl/MuseoCyrl_700.otf");
+}
+@import '_variable';
+@import "_header";
+@import "_main";
+@import "_elements";
+@import "_slider";
+@import "_footer";
+@import "_popup";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.container {
+  width: $MAX_WIDTH;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: MuseoCyrl, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+h2 {
+  font-family: MuseoCyrl, sans-serif;
+  line-height: 24px;
+  font-size: 24px;
+}
+h3 {
+  font-family: MuseoCyrl, sans-serif;
+  line-height: 26px;
+  font-size: 20px;
+}
+h4 {
+  margin-bottom: 6px;
+  font-family: MuseoCyrl, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: $main-blue;
+  &:hover {
+    color: $main-orange;
+  }
+}
+p {
+  font-family: FiraSans;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+}
+.float-right {
+  float: right;
+}
+.uppercase {
+  text-transform: uppercase;
+}

@@ -1,0 +1,174 @@
+.main-first {
+  padding-top: 64px;
+  height: 100vh;
+  overflow: hidden;
+  .main-first--title {
+    position: absolute;
+    left: 120px;
+    top: 45%;
+    width: 430px;
+    text-align: left;
+    .title--first {
+      color: $white;
+      font-family: MuseoCyrl, sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.main--description {
+  font-family: FiraSans;
+  font-weight: normal;
+  line-height: 22px;
+  font-size: 15px;
+  color: $main-black;
+  ul {
+    padding-top: 7px;
+    li {
+      max-width: 520px;
+      text-align: left;
+      margin-bottom: 38px;
+      list-style: none;
+      background: url("../images/icon/marker.svg") no-repeat 0 4px;
+      padding-left: 48px;
+    }
+  }
+}
+.title--second, .title--third, .title--fourth {
+  font-family: MuseoCyrl, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: $main-black;
+}
+.main-second {
+  height: 100%;
+  &--content {
+    padding-top: 114px;
+    .main-second--title {
+      top: 130px;
+      position: absolute;
+      left: 120px;
+      max-width: 630px;
+      color: $main-black;
+    }
+
+  }
+  .main--slider {
+    height: 50%;
+    position:absolute;
+    bottom: 0;
+    width: 50%;
+  }
+}
+.main-second-description {
+  padding-top: 70px;
+  float: right;
+}
+.main-third {
+  height: 100vh;
+  &--photo {
+  float: left;
+  width: 50%;
+  height: 100vh;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &--content {
+    padding-top: 90px;
+    float: right;
+    .main-third--title {
+      max-width: 520px;
+      padding-bottom: 20px;
+      color: $main-black;
+    }
+    @media (min-width: 1550px) {
+      padding-top: 160px;
+    }
+  }
+}
+.main-fourth {
+  &--title {
+    text-align: center;
+    padding-top: 145px;
+    padding-bottom: 42px;
+    color: $main-black;
+  }
+  &--content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .courses {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
+      .course {
+        width: 283px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        &--photo {
+          img {
+            width: 194px;
+            height: 194px;
+            max-width: 100%;
+            -webkit-transform: scale(1,1);
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 700ms;
+            -moz-transform: scale(1,1);
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 700ms;
+            &:hover {
+              -webkit-transform: scale(1.1,1.1);
+              -webkit-transition-timing-function: ease-out;
+              -webkit-transition-duration: 700ms;
+              -moz-transform: scale(1.1,1.1);
+              -moz-transition-timing-function: ease-out;
+              -moz-transition-duration: 700ms;
+            }
+          }
+        }
+        &--text {
+          margin-top: 18px;
+          text-align: center;
+          height: 100px;
+          p {
+            color: $main-gray;
+          }
+        }
+      }
+      .all-courses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -105px;
+        width: 194px;
+        height: 194px;
+        border: 1px dashed #FDAA18;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 14px;
+        font-family: MuseoCyrl, sans-serif;
+        line-height: 20px;
+        color: #495057;
+        text-transform: uppercase;
+        img {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}

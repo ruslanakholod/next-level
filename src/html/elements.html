@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>example</title>
+  <link rel="stylesheet" href="../../public/styles/style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="slider slides">
+      <div class="slide">
+        <img src="/public/images/slider/slide1.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="/public/images/slider/slide1.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="/public/images/slider/slide1.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="/public/images/slider/slide1.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="phones">
+    <div class="phones--icons">
+      <div class="icon-headphones">
+      </div>
+      <div class="icon-phone">
+      </div>
+    </div>
+    <div class="phone">
+      <div class="phone--content">
+        <span class="call">Заказать звонок</span>
+        <p>+375 (17) 262 11 98<br/>
+        +375 (29) 362 11 98</p>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;" id="request-call">
+    <h2 class="popup-title">Заказать звонок</h2>
+    <form class="form request-call-form" action="#" method="post">
+      <div class="filed required-field">
+        <input class="form-field name" type="text" name="" value="" required>
+        <div class="placeholder">Ваше имя <span class="star">*</span></div>
+      </div>
+      <div class="field required-field">
+        <input class="form-field phone" type="text" name="" value="" required>
+        <div class="placeholder">Контактный телефон <span class="star">*</span></div>
+      </div>
+      <input class="form-field message" type="text" name="" value="" placeholder="Сообщение" >
+      <button class="link-btn-orange form-btn" type="submit" name="button">Отправить</button>
+    </form>
+  </div>
+  <a data-fancybox data-src="#request-call" href="javascript:;">
+	   Заказать звонок
+  </a>
+  <div style="display: none;" id="feedback">
+    <h2 class="popup-title">Форма обратной связи</h2>
+    <form class="form enroll-form" action="#" method="post">
+      <div class="required-field">
+        <input class="form-field name" type="text" name="" value="" required>
+        <div class="placeholder">Ф. И. О. <span class="star">*</span></div>
+      </div>
+      <div class="required-field">
+        <input class="form-field email" type="text" name="" value=""  required>
+        <div class="placeholder">E-mail <span class="star">*</span></div>
+      </div>
+      <input class="form-field message" type="text" name="" value="" placeholder="Сообщение" >
+      <button class="link-btn-orange form-btn" type="submit" name="button">Отправить</button>
+    </form>
+  </div>
+  <a data-fancybox data-src="#feedback" href="javascript:;">
+	   feedback
+  </a>
+
+  <a data-fancybox data-src="#trueModal"  href="javascript:;" class="btn btn-primary">Open demo</a>
+  <div style="display: none;" id="trueModal">
+    <h2 class="popup-title">Спасибо, ваше сообщение отправлено</h2>
+    <p>Наши специалисты свяжутся с вами в ближайшее время</p>
+    <button class="link-btn-orange btn" data-fancybox-close>ОК</button>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="../../public/js/scripts.js"></script>
+</body>
+</html>
